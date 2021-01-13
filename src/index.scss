@@ -1,0 +1,13 @@
+@import 'src/variables';
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: $main-color;
+    color: $font-color;
+}
+
+#root {
+    height: 100%;
+}
+
+@import "./reset.css";

@@ -1,0 +1,24 @@
+$decor-color: #6395B0;
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 80vh;
+  max-width: 800px;
+  padding-top: 20px;
+}
+
+.html_decor {
+  font-size: calc(1rem + 1vw);
+  color: $decor-color;
+  opacity: 0.3;
+  margin-left: 3vw;
+}
+
+.greeting {
+  position: absolute;
+  z-index: 999;
+  font-size: 3rem;
+}

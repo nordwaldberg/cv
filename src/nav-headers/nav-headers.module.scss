@@ -1,0 +1,19 @@
+@import 'src/variables';
+
+.menu-nav-header {
+  padding-top: $nav-font-size;
+
+  &__logotype {
+    font-size: $nav-font-size;
+  }
+
+  &__close-btn {
+    font-size: $nav-font-size;
+    text-align: right;
+  }
+
+  &__menu-btn {
+    font-size: $nav-font-size;
+    text-align: right;
+  }
+}
