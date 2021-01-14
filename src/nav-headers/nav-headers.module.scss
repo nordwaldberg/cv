@@ -5,15 +5,24 @@
 
   &__logotype {
     font-size: $nav-font-size;
+    &:hover {
+      color: $decor-color;
+    }
   }
 
   &__close-btn {
     font-size: $nav-font-size;
     text-align: right;
+    &:hover {
+      color: $decor-color;
+    }
   }
 
   &__menu-btn {
     font-size: $nav-font-size;
     text-align: right;
+    &:hover {
+      color: $decor-color;
+    }
   }
 }

@@ -1,0 +1,37 @@
+@import 'src/variables';
+
+$items-padding: 3.5vw;
+
+.social-links {
+  font-size: $links-font-size;
+
+
+
+  &__github {
+    padding-right: $items-padding;
+    &:hover {
+      color: $decor-color;
+    }
+  }
+
+  &__email {
+    padding-right: $items-padding;
+    &:hover {
+      color: $decor-color;
+    }
+  }
+
+  &__telegram {
+    padding-right: $items-padding;
+    &:hover {
+      color: $decor-color;
+    }
+  }
+
+  &__hh {
+    padding-right: $items-padding;
+    &:hover {
+      color: $decor-color;
+    }
+  }
+}
