@@ -5,8 +5,6 @@ $items-padding: 3.5vw;
 .social-links {
   font-size: $links-font-size;
 
-
-
   &__github {
     padding-right: $items-padding;
     &:hover {
@@ -33,5 +31,11 @@ $items-padding: 3.5vw;
     &:hover {
       color: $decor-color;
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .social-links {
+    display: none;
   }
 }
