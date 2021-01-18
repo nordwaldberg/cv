@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './main-page.module.scss';
-import MainNavHeader from "../nav-headers/main-nav-header";
 import SocialLinks from "../social-links";
 import { description, htmlDecor } from "../text-content";
 
@@ -8,7 +7,6 @@ import { description, htmlDecor } from "../text-content";
 const MainPage = () => {
     return (
         <div>
-            <MainNavHeader/>
             <div className={styles["main-content"]}>
                 <div className={styles["main-content__html-decor"]}>
                     {htmlDecor}

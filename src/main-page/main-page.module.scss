@@ -17,7 +17,7 @@
 
   &__greeting {
     position: absolute;
-    z-index: 999;
+    z-index: 100;
     font-size: calc(3rem + 1.2vw)
   }
 
@@ -44,7 +44,7 @@
       position: absolute;
       top: 30vh;
       left: 30vw;
-      z-index: 999;
+      z-index: 100;
       font-size: calc(1rem + 0.3vw);
       margin-top: 80px;
     }
