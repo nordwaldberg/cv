@@ -1,0 +1,10 @@
+.empty-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  &__text {
+    font-size: calc(2rem + 2vw);
+    opacity: .5;
+  }
+}

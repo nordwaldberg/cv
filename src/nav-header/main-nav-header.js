@@ -9,7 +9,7 @@ const MainNavHeader = ({ menuSwitcher, visibleMenu }) => {
         <div className="container">
             <div className={`row ${styles['menu-nav-header']}`}>
                <div className={`col-8 ${styles['menu-nav-header__logotype']}`}>
-                   <Link to="/">.nordwaldberg</Link>
+                   <Link to="/" onClick={ visibleMenu = false }>.nordwaldberg</Link>
                </div>
                <div className={`col-4 ${styles['menu-nav-header__menu-btn']}`}>
                    <button onClick={ menuSwitcher }>{ menuBtnName }</button>
