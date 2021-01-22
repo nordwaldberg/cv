@@ -1,0 +1,25 @@
+@import "src/variables";
+
+.contacts-page {
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: calc(2rem + 1vw);
+
+    &__item {
+      padding-bottom: 5vh;
+    }
+
+    &__item:hover {
+      color: $decor-color;
+      transform: scale(1.2);
+      transition: .3s;
+    }
+  }
+}
