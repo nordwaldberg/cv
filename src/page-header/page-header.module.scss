@@ -1,0 +1,28 @@
+@import 'src/variables';
+
+.page-header {
+  display: flex;
+  height: 9vh;
+  margin-top: 20px;
+  &__number {
+    position: absolute;
+    z-index: -10;
+    align-self: flex-start;
+    color: $decor-color;
+    font-size: calc(5rem + 2.7vw);
+    font-weight: bold;
+  }
+
+  &__name {
+    padding-left: 6vh;
+    align-self: flex-end;
+    font-size: calc(2rem + 1vw);
+  }
+}
+
+@media (min-height: 1200px) {
+  .page-header {
+    height: 6.5vh;
+    margin-top: 40px;
+  }
+}
