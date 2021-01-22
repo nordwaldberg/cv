@@ -26,7 +26,19 @@ const htmlDecor = <p>
     &lt;/html&gt;<br/>
 </p>
 
+const datesOfWork = ['Dec. 2018 - Oct. 2019'];
+
+const countryAndCityOfWork = ['Russia, Saint-Petersburg'];
+
+const placeOfWork = ['Fitness 24'];
+
+const workPosition = ['Administrator'];
+
 export {
     description,
-    htmlDecor
+    htmlDecor,
+    datesOfWork,
+    countryAndCityOfWork,
+    placeOfWork,
+    workPosition
 }

@@ -1,0 +1,34 @@
+@import "src/variables";
+
+.place-of-work-details {
+  margin-bottom: 20px;
+  margin-left: 10vw;
+  &__decor {
+    position: relative;
+    z-index: -999;
+    width: 100px;
+    height: 20px;
+    top: 10px;
+    background-color: $decor-color;
+    opacity: .9;
+  }
+
+  &__dates {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  &__location {
+    color: $decor-color;
+    margin-bottom: 10px;
+  }
+
+  &__company {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  &__position {
+
+  }
+}
