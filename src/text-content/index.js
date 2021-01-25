@@ -4,7 +4,10 @@ import {
     datesOfWork,
     countryAndCityOfWork,
     placeOfWork,
-    workPosition
+    workPosition,
+    terminalPCName,
+    terminalCommand,
+    skills
 } from "./text-content";
 
 export {
@@ -13,5 +16,8 @@ export {
     datesOfWork,
     countryAndCityOfWork,
     placeOfWork,
-    workPosition
+    workPosition,
+    terminalCommand,
+    terminalPCName,
+    skills
 }

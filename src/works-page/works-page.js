@@ -10,7 +10,6 @@ const WorksPage = () => {
             <div className={`${styles['empty-page']}`}>
                 <p className={`${styles['empty-page__text']}`}>page in development</p>
             </div>
-            <SocialLinks/>
         </div>
     );
 };
