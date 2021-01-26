@@ -7,7 +7,9 @@ import {
     workPosition,
     terminalPCName,
     terminalCommand,
-    skills
+    skills,
+    aboutText,
+    htmlDecorLarge
 } from "./text-content";
 
 export {
@@ -19,5 +21,7 @@ export {
     workPosition,
     terminalCommand,
     terminalPCName,
-    skills
+    skills,
+    aboutText,
+    htmlDecorLarge
 }

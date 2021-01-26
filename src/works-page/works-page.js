@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './works-page.module.scss';
-import SocialLinks from "../social-links";
 import PageHeader from "../page-header";
 
 const WorksPage = () => {
