@@ -8,7 +8,7 @@ import MainPage from "../main-page";
 import AboutPage from "../about-page";
 import SkillsPage from "../skills-page";
 import ExperiencePage from "../experience-page";
-import WorksPage from "../works-page";
+import PortfolioPage from "../portfolio-page";
 import ContactsPage from "../contacts-page";
 
 
@@ -49,7 +49,7 @@ export default class App extends React.Component {
                         <Route path="/about_me" component={AboutPage} exact/>
                         <Route path="/skills" component={SkillsPage} exact/>
                         <Route path="/experience" component={ExperiencePage} exact/>
-                        <Route path="/works" component={WorksPage} exact/>
+                        <Route path="/portfolio" component={PortfolioPage} exact/>
                         <Route path="/contacts" component={ContactsPage} exact/>
                     </Switch>
                 </div>

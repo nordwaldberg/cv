@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './works-page.module.scss';
+import styles from './portfolio-page.module.scss';
 import PageHeader from "../page-header";
 
-const WorksPage = () => {
+const PortfolioPage = () => {
     return (
         <div>
-            <PageHeader number="04" name=".works"/>
+            <PageHeader number="04" name=".portfolio"/>
             <div className={`${styles['empty-page']}`}>
                 <p className={`${styles['empty-page__text']}`}>page in development</p>
             </div>
@@ -13,4 +13,4 @@ const WorksPage = () => {
     );
 };
 
-export default WorksPage;
+export default PortfolioPage;

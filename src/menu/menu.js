@@ -20,7 +20,7 @@ const Menu = ({menuSwitcher}) => {
                 </div>
                 <div className={`${styles['menu__nav-links-list__item']}`}>
                     <div className={`${styles['menu__nav-links-list__item__number']}`}>04</div>
-                    <Link to="/works" onClick={ menuSwitcher }>.works</Link>
+                    <Link to="/portfolio" onClick={ menuSwitcher }>.portfolio</Link>
                 </div>
                 <div className={`${styles['menu__nav-links-list__item']}`}>
                     <div className={`${styles['menu__nav-links-list__item__number']}`}>05</div>
