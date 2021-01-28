@@ -10,6 +10,7 @@ import SkillsPage from "../skills-page";
 import ExperiencePage from "../experience-page";
 import PortfolioPage from "../portfolio-page";
 import ContactsPage from "../contacts-page";
+import ErrorBoundary from "../error-handler";
 
 
 export default class App extends React.Component {
@@ -34,26 +35,30 @@ export default class App extends React.Component {
     render() {
         if (this.state.visibleMenu) {
             return (
-                <Router>
-                    <MainNavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
-                    <Menu menuSwitcher={this.menuSwitcher}/>
-                </Router>
+                <ErrorBoundary>
+                    <Router>
+                        <MainNavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
+                        <Menu menuSwitcher={this.menuSwitcher}/>
+                    </Router>
+                </ErrorBoundary>
             );
         }
         return (
-            <Router>
-                <div>
-                    <MainNavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
-                    <Switch>
-                        <Route path="/" component={MainPage} exact/>
-                        <Route path="/about_me" component={AboutPage} exact/>
-                        <Route path="/skills" component={SkillsPage} exact/>
-                        <Route path="/experience" component={ExperiencePage} exact/>
-                        <Route path="/portfolio" component={PortfolioPage} exact/>
-                        <Route path="/contacts" component={ContactsPage} exact/>
-                    </Switch>
-                </div>
-            </Router>
+            <ErrorBoundary>
+                <Router>
+                    <div>
+                        <MainNavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
+                        <Switch>
+                            <Route path="/" component={MainPage} exact/>
+                            <Route path="/about_me" component={AboutPage} exact/>
+                            <Route path="/skills" component={SkillsPage} exact/>
+                            <Route path="/experience" component={ExperiencePage} exact/>
+                            <Route path="/portfolio" component={PortfolioPage} exact/>
+                            <Route path="/contacts" component={ContactsPage} exact/>
+                        </Switch>
+                    </div>
+                </Router>
+            </ErrorBoundary>
         );
     };
 };

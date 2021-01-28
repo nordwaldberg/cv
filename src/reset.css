@@ -58,6 +58,7 @@ table {
 
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
     color: inherit;
     vertical-align: baseline;
 }

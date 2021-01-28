@@ -3,8 +3,6 @@ import styles from './experience-page.module.scss';
 import PageHeader from "../page-header";
 import PlaceOfWork from "../place-of-work";
 
-
-
 const ExperiencePage = () => {
     return (
         <div className={`${styles['exp-page']}`}>
