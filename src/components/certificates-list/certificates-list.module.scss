@@ -1,0 +1,39 @@
+@import 'src/variables';
+
+.certificates {
+  height: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 40px;
+  &__switcher {
+    font-size: calc(.9rem + .5vw);
+    font-weight: bold;
+  }
+
+  &__switcher:hover {
+    color: $decor-color;
+  }
+
+  &__list {
+    &__item {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      transition: 0.5s;
+    }
+    &__item:hover {
+      color: $decor-color;
+      transform: translateX(2vw);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .certificates {
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    &__list {
+      &__item {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

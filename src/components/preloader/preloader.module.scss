@@ -1,0 +1,17 @@
+.preloader {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: dissipation 1s ease-in;
+}
+
+@keyframes dissipation {
+  0%   { opacity: 1; }
+  50% { opacity: .7; }
+  75% { opacity: .5; }
+  85% { opacity: .3; }
+  90% { opacity: .1; }
+  100% { display: none; }
+}

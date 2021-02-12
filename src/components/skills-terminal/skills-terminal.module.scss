@@ -1,0 +1,53 @@
+@import 'src/variables';
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  margin-top: 10vh;
+  background-color: $terminal-bg-color;
+
+  &__line {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+    margin-left: 5vh;
+  }
+
+  &__line-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-left: 5vh;
+  }
+}
+
+.terminal-pc-name {
+  font-weight: bold;
+  color: $decor-color;
+}
+
+.underscore-cursor {
+  font-weight: bold;
+  padding-left: 1vh;
+  animation: blinker .9s infinite ease;
+}
+
+.terminal-command {
+  padding-left: 1vh;
+}
+
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+@media (max-width: 500px) {
+  .terminal {
+    margin-top: 6vh;
+    &__line:first-child {
+      flex-direction: column;
+    }
+  }
+}
