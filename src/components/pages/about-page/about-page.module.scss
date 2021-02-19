@@ -2,10 +2,12 @@
 
 .about-page {
   height: 80vh;
+
   &__content {
     margin-top: 6vh;
     margin-bottom: 3.5vh;
     height: 70vh;
+
     &__portrait {
       height: 28vh;
       background-image: url("../../../images/portrait.jpg");
@@ -25,8 +27,10 @@
 
   &__links {
     height: 4vh;
+
     &__resume {
       font-size: calc(.5rem + 1.7vw);
+
       &:hover {
         color: $decor-color;
       }
@@ -47,6 +51,7 @@
       justify-content: center;
       margin-top: 10vh;
       margin-bottom: 2vh;
+
       &__portrait {
         width: 66vh;
         height: 35vh;

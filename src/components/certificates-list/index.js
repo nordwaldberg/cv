@@ -1,1 +1,1 @@
-export {default} from "./certificates-list";
+export { default } from "./certificates-list";

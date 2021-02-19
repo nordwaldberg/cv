@@ -5,14 +5,7 @@ import NavHeader from "../nav-header";
 import Menu from "../menu";
 import ErrorBoundary from "../error-handler";
 import Preloader from "../preloader";
-import {
-    AboutPage,
-    ContactsPage,
-    ExperiencePage,
-    MainPage,
-    PortfolioPage,
-    SkillsPage
-} from '../pages';
+import { AboutPage, ContactsPage, ExperiencePage, MainPage, PortfolioPage, SkillsPage } from '../pages';
 
 
 export default class App extends React.Component {

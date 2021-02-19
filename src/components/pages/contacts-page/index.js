@@ -1,1 +1,1 @@
-export {default} from "./contacts-page";
+export { default } from "./contacts-page";

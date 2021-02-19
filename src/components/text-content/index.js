@@ -6,7 +6,7 @@ export {
     placeOfWork,
     workPosition
 } from './place-of-work-data';
-export  {
+export {
     skills,
     terminalCommand,
     terminalPCName

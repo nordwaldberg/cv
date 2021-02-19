@@ -9,9 +9,9 @@ const AboutPage = () => {
         <div className={`${styles['about-page']}`}>
             <PageHeader name=".about_me" number="01"/>
             <div className={`${styles['about-page__content']}`}>
-                <div className={`${styles['about-page__content__decor']}`}>{ htmlDecorLarge }</div>
+                <div className={`${styles['about-page__content__decor']}`}>{htmlDecorLarge}</div>
                 <div className={`${styles['about-page__content__portrait']}`}></div>
-                <div className={`${styles['about-page__content__text']}`}>{ aboutText }</div>
+                <div className={`${styles['about-page__content__text']}`}>{aboutText}</div>
             </div>
             <div className={`${styles['about-page__links']}`}>
                 <div className={`${styles['about-page__links__resume']}`}>

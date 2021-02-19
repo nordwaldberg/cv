@@ -1,1 +1,1 @@
-export {default} from "./error-indicator";
+export { default } from "./error-indicator";

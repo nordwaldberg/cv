@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './main-page.module.scss';
 import SocialLinks from "../../social-links";
-import { description, htmlDecor, greeting } from "../../text-content";
+import { description, greeting, htmlDecor } from "../../text-content";
 import Typing from 'react-typing-animation';
 
 const MainPage = () => {
@@ -14,13 +14,13 @@ const MainPage = () => {
                 <div className={styles["main-content__greeting"]}>
                     <Typing hideCursor="true"
                             speed={55}>
-                    {greeting}
+                        {greeting}
                     </Typing>
                 </div>
                 <div className={styles["main-content__description"]}>
                     <Typing hideCursor="true"
-                                  speed={20}
-                    startDelay={2000}>
+                            speed={20}
+                            startDelay={2000}>
 
                         {description}
                     </Typing>

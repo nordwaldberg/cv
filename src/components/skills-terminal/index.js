@@ -1,1 +1,1 @@
-export {default} from "./skills-terminal";
+export { default } from "./skills-terminal";

@@ -1,19 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from './skills-terminal.module.scss';
-import {
-    terminalPCName,
-    terminalCommand,
-    skills
-} from '../text-content';
+import { skills, terminalCommand, terminalPCName } from '../text-content';
 import Typing from 'react-typing-animation';
-import {notShowClass, showClass} from "../../styles/helpers";
+import { notShowClass, showClass } from "../../styles/helpers";
 
 const SkillsTerminal = () => {
     const [showSkills, setShowSkills] = useState(false);
     const [showLastLine, setShowLastLine] = useState(false);
 
-    const skillsClass = showSkills ?  showClass : notShowClass;
-    const lastLineClass = showLastLine ?  showClass : notShowClass;
+    const skillsClass = showSkills ? showClass : notShowClass;
+    const lastLineClass = showLastLine ? showClass : notShowClass;
 
     return (
         <div className={`${styles['terminal']}`}>

@@ -39,14 +39,19 @@
 }
 
 @keyframes blinker {
-  from { opacity: 1.0; }
-  to { opacity: 0.0; }
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.0;
+  }
 }
 
 @media (max-width: 500px) {
   .terminal {
     margin-top: 6vh;
     font-size: calc(.7rem + 1.5vw);
+
     &__line:first-child {
       flex-direction: column;
     }

@@ -8,10 +8,22 @@
 }
 
 @keyframes dissipation {
-  0%   { opacity: 1; }
-  50% { opacity: .7; }
-  75% { opacity: .5; }
-  85% { opacity: .3; }
-  90% { opacity: .1; }
-  100% { display: none; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+  75% {
+    opacity: .5;
+  }
+  85% {
+    opacity: .3;
+  }
+  90% {
+    opacity: .1;
+  }
+  100% {
+    display: none;
+  }
 }
