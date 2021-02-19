@@ -10,4 +10,17 @@ body {
     height: 100%;
 }
 
+::-webkit-scrollbar { /* 1 - скроллбар */
+    width: 5px;
+     background-color: $main-color;
+     scroll-behavior: smooth;
+ }
+
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+    border-radius: 1px;
+    background-color: $scrollbar-thumb-color;
+    height: 100px;
+}
+
+
 @import "./reset.css";

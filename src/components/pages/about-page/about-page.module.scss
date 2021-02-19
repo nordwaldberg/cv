@@ -3,9 +3,9 @@
 .about-page {
   height: 80vh;
   &__content {
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-    height: 50vh;
+    margin-top: 6vh;
+    margin-bottom: 3.5vh;
+    height: 70vh;
     &__portrait {
       height: 28vh;
       background-image: url("../../../images/portrait.jpg");
@@ -14,7 +14,7 @@
     }
 
     &__text {
-      margin-top: 2vh;
+      margin-top: 1vh;
       font-size: calc(.5rem + 1.7vw);
     }
 
@@ -24,7 +24,7 @@
   }
 
   &__links {
-
+    height: 4vh;
     &__resume {
       font-size: calc(.5rem + 1.7vw);
       &:hover {
@@ -41,17 +41,19 @@
 @media (min-width: 1100px) {
   .about-page {
     &__content {
+      height: 55vh;
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
-      margin-bottom: 9vh;
+      margin-top: 10vh;
+      margin-bottom: 2vh;
       &__portrait {
         width: 66vh;
         height: 35vh;
       }
 
       &__text {
-        margin-top: 8vh;
+        margin-top: 4vh;
         margin-right: 10vh;
         font-size: calc(.5rem + .5vw);
       }

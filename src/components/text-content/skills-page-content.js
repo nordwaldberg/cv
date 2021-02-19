@@ -8,6 +8,7 @@ const skills = <p>
     - JavaScript<br/>
     - TypeScript<br/>
     - React<br/>
+    - Redux<br/>
     - HTML<br/>
     - CSS<br/>
     - Node.JS<br/>

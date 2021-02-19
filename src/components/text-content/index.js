@@ -1,4 +1,4 @@
-import { description, aboutText } from "./text-content";
+import { description, aboutText, greeting } from "./text-content";
 import { htmlDecor, htmlDecorLarge } from './text-decor';
 import {
     datesOfWork,
@@ -23,5 +23,6 @@ export {
     terminalPCName,
     skills,
     aboutText,
-    htmlDecorLarge
+    htmlDecorLarge,
+    greeting
 }
