@@ -1,2 +1,1 @@
-import CertificatesList from "./certificates-list";
-export default CertificatesList;
+export {default} from "./certificates-list";

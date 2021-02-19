@@ -1,24 +1,25 @@
 @import 'src/variables';
 
 .terminal {
-  height: 62vh;
   margin-top: 10vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  padding-left: 4vh;
   background-color: $terminal-bg-color;
 
-  &__line {
+  &__row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2vh;
-    margin-left: 5vh;
   }
 
-  &__line-col {
+  &__row:not(:last-of-type) {
+    margin-bottom: 2vh;
+  }
+
+  &__col {
     display: flex;
     flex-direction: column;
     margin-bottom: 2vh;
-    margin-left: 5vh;
   }
 }
 
@@ -45,6 +46,7 @@
 @media (max-width: 500px) {
   .terminal {
     margin-top: 6vh;
+    font-size: calc(.7rem + 1.5vw);
     &__line:first-child {
       flex-direction: column;
     }

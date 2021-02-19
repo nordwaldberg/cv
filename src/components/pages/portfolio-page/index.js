@@ -1,2 +1,1 @@
-import PortfolioPage from "./portfolio-page";
-export default PortfolioPage;
+export {default} from "./portfolio-page";

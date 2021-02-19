@@ -1,9 +1,10 @@
 @import 'src/variables';
 
 .certificates {
-  height: 20vh;
-  margin-top: 5vh;
+  height: 10vh;
+  margin-top: 2vh;
   margin-bottom: 40px;
+
   &__switcher {
     font-size: calc(.9rem + .5vw);
     font-weight: bold;

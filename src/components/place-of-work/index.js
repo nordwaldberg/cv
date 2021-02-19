@@ -1,2 +1,1 @@
-import PlaceOfWork from "./place-of-work";
-export default PlaceOfWork;
+export {default} from "./place-of-work";

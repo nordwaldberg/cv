@@ -1,10 +1,10 @@
 import React from "react";
 
-const terminalPCName = "nordwaldberg@nordwaldberg:~$";
+export const terminalPCName = "nordwaldberg@nordwaldberg:~$";
 
-const terminalCommand = " cat ./skills.txt";
+export const terminalCommand = " cat ./skills.txt";
 
-const skills = <p>
+export const skills = <p>
     - JavaScript<br/>
     - TypeScript<br/>
     - React<br/>
@@ -21,9 +21,3 @@ const skills = <p>
     - Adobe Photoshop<br/>
     - Adobe Illustrator<br/>
 </p>
-
-export {
-    skills,
-    terminalCommand,
-    terminalPCName
-}

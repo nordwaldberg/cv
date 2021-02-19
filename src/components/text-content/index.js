@@ -1,28 +1,13 @@
-import { description, aboutText, greeting } from "./text-content";
-import { htmlDecor, htmlDecorLarge } from './text-decor';
-import {
+export { description, aboutText, greeting } from "./text-content";
+export { htmlDecor, htmlDecorLarge } from './text-decor';
+export {
     datesOfWork,
     countryAndCityOfWork,
     placeOfWork,
     workPosition
 } from './place-of-work-data';
-import  {
+export  {
     skills,
     terminalCommand,
     terminalPCName
 } from './skills-page-content';
-
-export {
-    description,
-    htmlDecor,
-    datesOfWork,
-    countryAndCityOfWork,
-    placeOfWork,
-    workPosition,
-    terminalCommand,
-    terminalPCName,
-    skills,
-    aboutText,
-    htmlDecorLarge,
-    greeting
-}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styles from './skills-terminal.module.scss';
 import {
     terminalPCName,
@@ -6,17 +6,18 @@ import {
     skills
 } from '../text-content';
 import Typing from 'react-typing-animation';
+import {notShowClass, showClass} from "../../styles/helpers";
 
 const SkillsTerminal = () => {
     const [showSkills, setShowSkills] = useState(false);
     const [showLastLine, setShowLastLine] = useState(false);
 
-    let skillsContent = showSkills ? <SkillsList/> : null;
-    let lastLineContent = showLastLine ? <UnderscoreLine/> : null;
+    const skillsClass = showSkills ?  showClass : notShowClass;
+    const lastLineClass = showLastLine ?  showClass : notShowClass;
 
     return (
         <div className={`${styles['terminal']}`}>
-            <div className={`${styles['terminal__line']}`}>
+            <div className={`${styles['terminal__row']}`}>
                 <div className={`${styles['terminal-pc-name']}`}>
                     {terminalPCName}
                 </div>
@@ -31,11 +32,15 @@ const SkillsTerminal = () => {
                     {terminalCommand}
                 </Typing>
             </div>
-            <div className={`${styles['terminal__line-col']}`}>
-                {skillsContent}
+            <div
+                className={`${styles['terminal__col']} ${skillsClass}`}
+            >
+                <SkillsList/>
             </div>
-            <div className={`${styles['terminal__line']}`}>
-                {lastLineContent}
+            <div
+                className={`${styles['terminal__row']} ${lastLineClass}`}
+            >
+                <UnderscoreLine/>
             </div>
         </div>
     );

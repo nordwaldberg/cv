@@ -1,2 +1,1 @@
-import SkillsPage from "./skills-page";
-export default SkillsPage;
+export {default} from "./skills-page";

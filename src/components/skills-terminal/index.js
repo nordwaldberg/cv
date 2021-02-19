@@ -1,2 +1,1 @@
-import SkillsTerminal from "./skills-terminal";
-export default SkillsTerminal;
+export {default} from "./skills-terminal";

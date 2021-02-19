@@ -1,6 +1,6 @@
 import React from "react";
 
-const htmlDecor = <p>
+export const htmlDecor = <p>
     &lt;!doctype html&gt;<br/>
     &lt;html lang="ru en"&gt;<br/>
     &lt;head&gt;<br/>
@@ -14,7 +14,7 @@ const htmlDecor = <p>
     &lt;/html&gt;<br/>
 </p>
 
-const htmlDecorLarge = <p>
+export const htmlDecorLarge = <p>
     &lt;!doctype html&gt;<br/>
     &lt;html lang="ru en"&gt;<br/>
     &lt;head&gt;<br/>
@@ -34,8 +34,3 @@ const htmlDecorLarge = <p>
     &lt;/body&gt;<br/>
     &lt;/html&gt;<br/>
 </p>
-
-export {
-    htmlDecor,
-    htmlDecorLarge
-}

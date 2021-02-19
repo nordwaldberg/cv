@@ -1,21 +1,21 @@
 import React from 'react';
 import styles from './text-content.module.scss';
 
-const greeting = <p>
+export const greeting = <p>
     Hi. <br/>
     I'm nordwaldberg.
 </p>
 
-const description = <p>
+export const description = <p>
     Junior Frontend Developer <br/>
     from Saint-Petersburg, Russia <br/>
 </p>
 
-const aboutTextComment = <span className={`${styles['about-text-comment']}`}>
+export const aboutTextComment = <span className={`${styles['about-text-comment']}`}>
     &#47;&#47; design for this react app was created by me :)
 </span>
 
-const aboutText = <p>
+export const aboutText = <p>
     Hello, my name is Alina Lomakina,<br/>
     I am a beginner in web-development.<br/>
     <br/>
@@ -36,9 +36,3 @@ const aboutText = <p>
     to artificial intelligence.<br/>
     I learn fast, love to explore, understand and create.<br/>
 </p>
-
-export {
-    description,
-    aboutText,
-    greeting
-}

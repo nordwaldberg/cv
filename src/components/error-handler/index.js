@@ -1,2 +1,1 @@
-import ErrorBounadry from "./error-handler";
-export default ErrorBounadry;
+export {default} from "./error-handler";
