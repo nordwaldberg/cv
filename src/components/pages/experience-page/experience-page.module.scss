@@ -1,7 +1,9 @@
+@import 'src/variables';
+
 .exp-page {
+  /* keep */
 }
 
 .places-of-work-list {
-  margin-top: 10vh;
+  margin-top: $l-page-margin-top;
 }
-

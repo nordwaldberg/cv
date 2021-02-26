@@ -17,6 +17,7 @@ const CertificatesList = () => {
             </button>
             <ul className={`${styles['certificates__list']}`}>
                 {certificateListContent}
+                {certificateListContent}
             </ul>
         </div>
     );

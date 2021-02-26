@@ -6,10 +6,9 @@
   flex-direction: column;
   align-items: center;
   height: 89vh;
-  padding-top: 20px;
 
   &__html-decor {
-    font-size: calc(1rem + 0.6vw);
+    font-size: $s-html-decor-font-size;
     color: $decor-color;
     opacity: 0.3;
     margin-left: 10vw;
@@ -18,7 +17,7 @@
   &__greeting {
     position: absolute;
     z-index: 100;
-    font-size: calc(2rem + .5vw)
+    font-size: $s-greeting-font-size;
   }
 
   &__description {
@@ -30,11 +29,11 @@
   .main-content {
     &__html-decor {
       align-self: center;
-      font-size: calc(1rem + 1.2vw);
+      font-size: $l-html-decor-font-size;
     }
 
     &__greeting {
-      font-size: calc(3rem + 0.5vw);
+      font-size: $l-greeting-font-size;
       top: 30vh;
       left: 30vw;
     }
@@ -45,7 +44,7 @@
       top: 30vh;
       left: 30vw;
       z-index: 100;
-      font-size: calc(1rem + 0.7vw);
+      font-size: $description-font-size;
       margin-top: 120px;
     }
   }

@@ -1,12 +1,10 @@
 @import 'src/variables';
 
-$items-padding: 3.5vw;
-
 .social-links {
   font-size: $links-font-size;
 
   &__github {
-    padding-right: $items-padding;
+    padding-right: $list-items-padding-right;
 
     &:hover {
       color: $decor-color;
@@ -14,7 +12,7 @@ $items-padding: 3.5vw;
   }
 
   &__email {
-    padding-right: $items-padding;
+    padding-right: $list-items-padding-right;
 
     &:hover {
       color: $decor-color;
@@ -22,7 +20,7 @@ $items-padding: 3.5vw;
   }
 
   &__telegram {
-    padding-right: $items-padding;
+    padding-right: $list-items-padding-right;
 
     &:hover {
       color: $decor-color;
@@ -30,7 +28,7 @@ $items-padding: 3.5vw;
   }
 
   &__hh {
-    padding-right: $items-padding;
+    padding-right: $list-items-padding-right;
 
     &:hover {
       color: $decor-color;

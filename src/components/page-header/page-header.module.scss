@@ -10,14 +10,14 @@
     z-index: -10;
     align-self: flex-start;
     color: $decor-color;
-    font-size: calc(5rem + 2.7vw);
+    font-size: $page-header-number-font-size;
     font-weight: bold;
   }
 
   &__name {
     padding-left: 6vh;
     align-self: flex-end;
-    font-size: calc(2rem + 1vw);
+    font-size: $page-header-name-font-size;
   }
 }
 

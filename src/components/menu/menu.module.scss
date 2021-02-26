@@ -12,10 +12,10 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    font-size: calc(2rem + 1vw);
+    font-size: $l-list-font-size;
 
     &__item {
-      padding-bottom: 5vh;
+      padding-bottom: $l-list-items-padding-btm;
 
       &__number {
         display: none;
@@ -30,7 +30,7 @@
         top: -40px;
         left: -60px;
         color: $decor-color;
-        font-size: calc(3rem + 5vw);
+        font-size: $menu-hover-number-font-size;
       }
 
       &:hover {
@@ -43,7 +43,7 @@
   &__bg-lettering {
     position: absolute;
     z-index: -100;
-    font-size: calc(5rem + 10vw);
+    font-size: $bg-lettering-font-size;
     letter-spacing: 3vw;
     opacity: .05;
   }

@@ -1,3 +1,5 @@
+@import "src/variables";
+
 .error-indicator {
   display: flex;
   justify-content: center;
@@ -9,6 +11,6 @@
   background-position: center;
 
   &__text {
-    font-size: calc(.7rem + 1vw);
+    font-size: $error-indicator-font-size;
   }
 }

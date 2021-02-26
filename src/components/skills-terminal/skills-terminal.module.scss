@@ -1,7 +1,7 @@
 @import 'src/variables';
 
 .terminal {
-  margin-top: 10vh;
+  margin-top: $l-page-margin-top;
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-left: 4vh;
@@ -30,12 +30,12 @@
 
 .underscore-cursor {
   font-weight: bold;
-  padding-left: 1vh;
+  padding-left: 10px;
   animation: blinker .9s infinite ease;
 }
 
 .terminal-command {
-  padding-left: 1vh;
+  padding-left: 10px;
 }
 
 @keyframes blinker {
@@ -49,8 +49,11 @@
 
 @media (max-width: 500px) {
   .terminal {
-    margin-top: 6vh;
-    font-size: calc(.7rem + 1.5vw);
+    margin-top: $s-page-margin-top;
+
+    &__row:not(:last-of-type) {
+      flex-direction: column;
+    }
 
     &__line:first-child {
       flex-direction: column;

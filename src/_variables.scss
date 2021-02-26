@@ -1,7 +1,3 @@
-//sizes
-$nav-font-size: 1.4rem;
-$links-font-size: 1.2rem;
-
 //colors
 $main-color: #1E1E1E;
 $font-color: white;
@@ -9,3 +5,45 @@ $decor-color: #6395B0;
 $terminal-bg-color: #252526;
 $scrollbar-thumb-color: #8c8b8b;
 $comments-color: #465f3a;
+
+//font-sizes
+// s- : mobile-tablet-desktop
+// l- : tablet-desktop
+// xl- : desktop
+$nav-font-size: 1.4rem;
+$links-font-size: 1.2rem;
+$place-of-work-dates-font-size: 1.2rem;
+$place-of-work-company-font-size: 1.5rem;
+$switcher-font-size: calc(.9rem + .5vw);
+$error-indicator-font-size: calc(.7rem + 1vw);
+$l-list-font-size: calc(2rem + 1vw);
+$menu-hover-number-font-size: calc(3rem + 5vw);
+$bg-lettering-font-size: calc(5rem + 10vw);
+$page-header-number-font-size: calc(5rem + 2.7vw);
+$page-header-name-font-size: calc(2rem + 1vw);
+$s-html-decor-font-size: calc(1rem + 0.6vw);
+$l-html-decor-font-size: calc(1rem + 1.2vw);
+$s-greeting-font-size: calc(2rem + .5vw);
+$l-greeting-font-size: calc(3rem + 0.5vw);
+$description-font-size: calc(1rem + 0.7vw);
+$portfolio-text-font-size: calc(1rem + 2vw);
+$skills-page-main-font-size: calc(.9rem + .5vw);
+$s-about-page-text-font-size: calc(.5rem + 1.7vw);
+$xl-about-page-text-font-size: calc(.5rem + .5vw);
+$xl-about-page-decor-font-size: calc(1rem + 0.6vw);
+$about-page-resume-font-size: calc(.5rem + 1.7vw);
+
+//s- : small
+//l- : large
+//paddings
+$s-list-items-padding-top: 1.5vh;
+$s-list-items-padding-btm: 1vh;
+$l-list-items-padding-btm: 5vh;
+$list-items-padding-right: 3.5vw;
+
+//margins
+$s-page-margin-top: 7vh;
+$l-page-margin-top: 10vh;
+$page-header-margin-top: 20px;
+$blocks-interval-margin-top: 20px;
+$blocks-interval-margin-btm: 20px;

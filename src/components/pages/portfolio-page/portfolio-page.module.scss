@@ -1,3 +1,4 @@
+@import 'src/variables';
 
 .empty-page {
   display: flex;
@@ -10,6 +11,6 @@
   background-position: center;
 
   &__text {
-    font-size: calc(1rem + 2vw);
+    font-size: $portfolio-text-font-size;
   }
 }

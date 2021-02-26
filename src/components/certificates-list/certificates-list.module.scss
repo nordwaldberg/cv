@@ -1,12 +1,9 @@
 @import 'src/variables';
 
 .certificates {
-  height: 10vh;
-  margin-top: 2vh;
-  margin-bottom: 40px;
-
+  height: 15vh;
   &__switcher {
-    font-size: calc(.9rem + .5vw);
+    font-size: $switcher-font-size;
     font-weight: bold;
   }
 
@@ -17,26 +14,12 @@
   &__list {
     &__item {
       margin-top: 8px;
-      margin-bottom: 8px;
       transition: 0.5s;
     }
 
     &__item:hover {
       color: $decor-color;
       transform: translateX(2vw);
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .certificates {
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh;
-
-    &__list {
-      &__item {
-        margin-bottom: 5px;
-      }
     }
   }
 }

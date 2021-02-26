@@ -1,8 +1,7 @@
 @import "src/variables";
 
 .place-of-work-details {
-  margin-bottom: 20px;
-  margin-left: 10vw;
+  margin-bottom: $blocks-interval-margin-btm;
 
   &__decor {
     position: relative;
@@ -15,18 +14,18 @@
   }
 
   &__dates {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    font-size: $place-of-work-dates-font-size;
+    padding-bottom: $s-list-items-padding-btm;
   }
 
   &__location {
     color: $decor-color;
-    margin-bottom: 10px;
+    padding-bottom: $s-list-items-padding-btm;
   }
 
   &__company {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+    font-size: $place-of-work-company-font-size;
+    padding-bottom: $s-list-items-padding-btm;
   }
 
   &__position {

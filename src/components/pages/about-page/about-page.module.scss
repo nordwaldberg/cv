@@ -1,12 +1,10 @@
 @import "src/variables";
 
 .about-page {
-  height: 80vh;
-
+  /* keep */
   &__content {
-    margin-top: 6vh;
-    margin-bottom: 3.5vh;
-    height: 70vh;
+    margin-top: $s-page-margin-top;
+    margin-bottom: $blocks-interval-margin-btm;
 
     &__portrait {
       height: 28vh;
@@ -16,8 +14,8 @@
     }
 
     &__text {
-      margin-top: 1vh;
-      font-size: calc(.5rem + 1.7vw);
+      margin-top: $blocks-interval-margin-top;
+      font-size: $s-about-page-text-font-size;
     }
 
     &__decor {
@@ -29,7 +27,7 @@
     height: 4vh;
 
     &__resume {
-      font-size: calc(.5rem + 1.7vw);
+      font-size: $about-page-resume-font-size;
 
       &:hover {
         color: $decor-color;
@@ -49,8 +47,7 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
-      margin-top: 10vh;
-      margin-bottom: 2vh;
+      margin-top: $l-page-margin-top;
 
       &__portrait {
         width: 66vh;
@@ -60,7 +57,7 @@
       &__text {
         margin-top: 4vh;
         margin-right: 10vh;
-        font-size: calc(.5rem + .5vw);
+        font-size: $xl-about-page-text-font-size;
       }
 
       &__decor {
@@ -69,7 +66,7 @@
         z-index: -100;
         top: 17vh;
         right: 7vw;
-        font-size: calc(1rem + 0.6vw);
+        font-size: $xl-about-page-decor-font-size;
         color: $decor-color;
         opacity: 0.4;
       }
