@@ -20,7 +20,9 @@ const AboutPage = () => {
                        rel="noreferrer noopener"
                        className={styles["social-links__hh"]}>.view_resume</a>
                 </div>
-                <div className={`${styles['about-page__links__social']}`}><SocialLinks/></div>
+                <div className={`${styles['about-page__links__social']}`}>
+                    <SocialLinks/>
+                </div>
             </div>
         </div>
     );

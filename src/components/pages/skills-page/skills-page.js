@@ -10,7 +10,9 @@ const SkillsPage = () => {
         <div className={`${styles['skills-page']}`}>
             <PageHeader name=".skills" number="02"/>
             <SkillsTerminal/>
-            <CertificatesList/>
+            <div className={`${styles['skills-page_top-indent']}`}>
+                <CertificatesList/>
+            </div>
         </div>
     );
 };

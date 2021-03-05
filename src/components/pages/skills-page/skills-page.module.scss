@@ -2,4 +2,8 @@
 
 .skills-page {
   font-size: $skills-page-main-font-size;
+
+  &_top-indent {
+    margin-top: $s-page-margin-top;
+  }
 }
