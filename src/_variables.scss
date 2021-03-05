@@ -21,7 +21,7 @@ $menu-hover-number-font-size: calc(3rem + 5vw);
 $bg-lettering-font-size: calc(5rem + 10vw);
 $page-header-number-font-size: calc(5rem + 2.7vw);
 $page-header-name-font-size: calc(2rem + 1vw);
-$s-html-decor-font-size: calc(1rem + 0.6vw);
+$s-html-decor-font-size: calc(1rem + 2vw);
 $l-html-decor-font-size: calc(1rem + 1.2vw);
 $s-greeting-font-size: calc(2rem + .5vw);
 $l-greeting-font-size: calc(3rem + 0.5vw);
@@ -36,6 +36,8 @@ $about-page-resume-font-size: calc(.5rem + 1.7vw);
 //s- : small
 //l- : large
 //paddings
+$block-padding: 1vw;
+$html-decor-padding: 5vw;
 $s-list-items-padding-top: 1.5vh;
 $s-list-items-padding-btm: 1vh;
 $l-list-items-padding-btm: 5vh;
@@ -47,3 +49,8 @@ $l-page-margin-top: 10vh;
 $page-header-margin-top: 20px;
 $blocks-interval-margin-top: 20px;
 $blocks-interval-margin-btm: 20px;
+
+//widths & heights
+$s-main-page-width: 80vw;
+$l-main-page-width: 50vw;
+$s-main-page-height: 25vh;

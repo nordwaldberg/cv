@@ -8,45 +8,46 @@
   height: 89vh;
 
   &__html-decor {
+    position: absolute;
+    padding: $html-decor-padding;
     font-size: $s-html-decor-font-size;
     color: $decor-color;
     opacity: 0.3;
-    margin-left: 10vw;
+    z-index: -1;
   }
 
-  &__greeting {
-    position: absolute;
-    z-index: 100;
-    font-size: $s-greeting-font-size;
-  }
+  &__text {
+    width: $s-main-page-width;
+    height: $s-main-page-height;
+    padding: $block-padding;
+    &_greeting {
+      font-size: $s-greeting-font-size;
+    }
 
-  &__description {
-    display: none;
+    &_description {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 700px) {
   .main-content {
     &__html-decor {
-      align-self: center;
       font-size: $l-html-decor-font-size;
     }
 
-    &__greeting {
-      font-size: $l-greeting-font-size;
-      top: 30vh;
-      left: 30vw;
+    &__text {
+      width: $l-main-page-width;
+      &_greeting {
+        font-size: $l-greeting-font-size;
+      }
+
+      &_description {
+        display: block;
+        font-size: $description-font-size;
+      }
     }
 
-    &__description {
-      display: block;
-      position: absolute;
-      top: 30vh;
-      left: 30vw;
-      z-index: 100;
-      font-size: $description-font-size;
-      margin-top: 120px;
-    }
   }
 }
 
