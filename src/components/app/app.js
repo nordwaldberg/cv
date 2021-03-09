@@ -14,49 +14,25 @@ export default class App extends React.Component {
         loading: true,
     };
 
-    menuSwitcher = () => {
-        this.setState(({ visibleMenu }) => {
-            if (visibleMenu) {
-                return {
-                    visibleMenu: false,
-                };
-            } else {
-                return {
-                    visibleMenu: true,
-                };
-            }
-        });
+    toggleMenu = () => {
+        this.setState({visibleMenu: !this.state.visibleMenu});
     };
+
+    closeMenu = () => {
+        this.setState({visibleMenu: false});
+    }
 
     componentDidMount() {
         setTimeout(() => this.setState({ loading: false }), 2000);
     }
 
     render() {
-        let preloader = this.state.loading ? <Preloader/> : null;
-
-        if (this.state.loading) {
-            return (
-                preloader
-            );
-        }
-
-        if (this.state.visibleMenu) {
-            return (
-                <ErrorBoundary>
-                    <Router>
-                        <NavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
-                        <Menu menuSwitcher={this.menuSwitcher}/>
-                    </Router>
-                </ErrorBoundary>
-            );
-        }
-
-        return (
+        const preloader = this.state.loading ? <Preloader/> : null;
+        const mainPage = (
             <ErrorBoundary>
                 <Router>
                     <div>
-                        <NavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
+                        <NavHeader toggleMenu={this.toggleMenu} visibleMenu={this.state.visibleMenu} closeMenu={this.closeMenu}/>
                         <Switch>
                             <Route path={`${process.env.PUBLIC_URL}/`} component={MainPage} exact/>
                             <Route path={`${process.env.PUBLIC_URL}/about_me`} component={AboutPage} exact/>
@@ -69,5 +45,23 @@ export default class App extends React.Component {
                 </Router>
             </ErrorBoundary>
         );
+        const menu = (
+            <ErrorBoundary>
+                <Router>
+                    <NavHeader toggleMenu={this.toggleMenu} visibleMenu={this.state.visibleMenu} closeMenu={this.closeMenu}/>
+                    <Menu toggleMenu={this.toggleMenu}/>
+                </Router>
+            </ErrorBoundary>
+        );
+
+        if (this.state.loading) {
+            return preloader;
+        }
+
+        if (this.state.visibleMenu) {
+            return menu;
+        }
+
+        return mainPage;
     };
 };
