@@ -58,12 +58,12 @@ export default class App extends React.Component {
                     <div>
                         <NavHeader menuSwitcher={this.menuSwitcher} visibleMenu={this.state.visibleMenu}/>
                         <Switch>
-                            <Route path="/" component={MainPage} exact/>
-                            <Route path="/about_me" component={AboutPage} exact/>
-                            <Route path="/skills" component={SkillsPage} exact/>
-                            <Route path="/experience" component={ExperiencePage} exact/>
-                            <Route path="/portfolio" component={PortfolioPage} exact/>
-                            <Route path="/contacts" component={ContactsPage} exact/>
+                            <Route path={`${process.env.PUBLIC_URL}/`} component={MainPage} exact/>
+                            <Route path={`${process.env.PUBLIC_URL}/about_me`} component={AboutPage} exact/>
+                            <Route path={`${process.env.PUBLIC_URL}/skills`} component={SkillsPage} exact/>
+                            <Route path={`${process.env.PUBLIC_URL}/experience`} component={ExperiencePage} exact/>
+                            <Route path={`${process.env.PUBLIC_URL}/portfolio`} component={PortfolioPage} exact/>
+                            <Route path={`${process.env.PUBLIC_URL}/contacts`} component={ContactsPage} exact/>
                         </Switch>
                     </div>
                 </Router>

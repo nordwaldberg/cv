@@ -20,6 +20,7 @@
     width: $s-main-page-width;
     height: $s-main-page-height;
     padding: $block-padding;
+
     &_greeting {
       font-size: $s-greeting-font-size;
     }
@@ -38,6 +39,7 @@
 
     &__text {
       width: $l-main-page-width;
+
       &_greeting {
         font-size: $l-greeting-font-size;
       }

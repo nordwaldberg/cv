@@ -1,5 +1,6 @@
 {
   "name": "nordwaldberg-website",
+  "homepage": "https://nordwaldberg.github.io/nordwaldberg-cv/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf docs && react-scripts build  && mv build docs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
