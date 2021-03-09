@@ -1,6 +1,6 @@
 {
   "name": "nordwaldberg-website",
-  "homepage": "https://nordwaldberg.github.io/nordwaldberg-cv/",
+  "homepage": "https://nordwaldberg.github.io/cv/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
