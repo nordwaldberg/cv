@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf docs && react-scripts build  && mv build docs",
+    "build": "rimraf docs && react-scripts build  && move-file build docs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,6 +37,8 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
-    "@types/react-router-dom": "^5.1.7"
+    "@types/react-router-dom": "^5.1.7",
+    "rimraf": "^3.0.2",
+    "move-file-cli": "^2.0.0"
   }
 }
